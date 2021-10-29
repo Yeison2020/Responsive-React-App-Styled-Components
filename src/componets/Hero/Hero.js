@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Container, MainHeading } from "../../globalStyles";
+import hero from "./hero.mp4";
 import {
   HeroVideo,
   HeroSection,
@@ -12,7 +13,9 @@ import {
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src="./hero.mp4" />
+      <HeroVideo>
+        <source src={hero} />
+      </HeroVideo>
       <Container>
         <MainHeading>Your data is secure with us</MainHeading>
         <HeroText>
